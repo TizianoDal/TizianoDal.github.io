@@ -12,6 +12,7 @@
       color: #222;
       margin: 40px;
       line-height: 1.2;
+      padding-top: 60px;
     }
 
     h1 {
@@ -41,10 +42,46 @@
       color: inherit;          /* usa il colore del testo normale */
       text-decoration: none;   /* rimuove la sottolineatura */
     }
+
+    .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  background-color: white;
+
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+
+  padding: 15px 0;
+
+  border-bottom: 1px solid #ddd;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #222;
+  font-size: 16px;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+
   </style>
 </head>
 
 <body>
+
+<div class="menu">
+  <a href="index.html">About</a>
+  <a href="#teaching">Teaching</a>
+  <a href="#publications">Publications</a>
+  <a href="#tools">Tools</a>
+</div>
 
   <h1>Tiziano Dalmonte</h1>
   <p>
@@ -63,29 +100,10 @@
 
   <hr>
 
-  <h2>Education</h2>
+  <h2 id="about">Research Interests</h2>
+  Modal logic, non-classical logics, description logics, conditional logics, proof-theory, automated deduction
 
-  <p>
-    <strong>PhD in Computer Science</strong><br>
-    University of Aix-Marseille, France · 2020
-  </p>
-
-  <p>
-    <strong>Master in Philosophy</strong><br>
-    University of Bologna, Italy · 2016
-  </p>
-
-  <p>
-    <strong>Bachelor in Philosophy</strong><br>
-    Johannes Gutenberg Universität Mainz, Germany and University of Bologna, Italy (binational program) · 2013
-  </p>
-
-  <h2>Qualification</h2>
-
-  <p>
-    <strong>Maître de Conférences en Informatique</strong><br>
-    French qualification, section 27 · Feb. 2024
-  </p>
+  
   
   <h2>Research Experience</h2>
 
@@ -114,8 +132,68 @@
     Faculty of Computer Science, University of Aix-Marseille, France · May 2017 – Oct. 2020
   </p>
 
+  <h2>Education</h2>
 
-  <h2>Publications</h2>
+  <p>
+    <strong>PhD in Computer Science</strong><br>
+    University of Aix-Marseille, France · 2020
+  </p>
+
+  <p>
+    <strong>Master in Philosophy</strong><br>
+    University of Bologna, Italy · 2016
+  </p>
+
+  <p>
+    <strong>Bachelor in Philosophy</strong><br>
+    Johannes Gutenberg Universität Mainz, Germany and University of Bologna, Italy (binational program) · 2013
+  </p>
+
+  <h2>Qualification</h2>
+
+  <p>
+    <strong>Maître de Conférences en Informatique</strong><br>
+    French qualification, section 27 · Feb. 2024
+  </p>
+
+
+  <h2 id="teaching">Teaching</h2>
+
+  <p>
+    <strong>Proof Theory of Modal Logic</strong><br>
+    with Marianna Girlando<br>
+    35th European Summer School in Logic, Language and Information (ESSLLI), 4 – 9 Aug. 2024<br>
+    <a class="no-link-style" target="_blank" href="https://esslli24-pfthml.github.io/esslli24PfThML.github.io/">(course material)</a>
+  </p>
+
+  
+
+  <p>
+    <strong>Laboratory of Data Structures and Algorithms</strong><br>
+    Bachelor in Computer Science, Free University of Bozen-Bolzano<br>
+    AYs 2022-23, 2023-24, 2024-25, 2025-26
+  </p>
+
+  <p>
+    <strong>Laboratory of Computer Programming</strong><br>
+    Bachelor in Computer Science, Free University of Bozen-Bolzano<br>
+    AYs 2023-24, 2024-25, 2025-26
+  </p>
+
+  <p>
+    <strong>Logic</strong> (didactic tutor)<br>
+    Bachelor in Philosophy, University of Bologna<br>
+    AYs 2016-17, 2021-22
+  </p>
+
+
+  <h2 id="publications">Publications</h2>
+
+  <h3>Thesis</h3>
+  <strong>Non-Normal Modal Logics: Neighbourhood Semantics and their Calculi</strong><br>
+  Defended on 05 Oct. 2020<br>
+  Supervised by Nicola Olivetti<br>
+  <a class="no-link-style" target="_blank" href="https://theses.fr/2020AIXM0314.pdf">(download here)</a>
 
   <h3>Journal Papers</h3>
 
@@ -353,7 +431,7 @@
     International Workshop on External and Internal Calculi for Non-classical Logics 2018
 </p>
 
-<h2>Tools</h2>
+<h2 id="tools">Tools</h2>
 
 <p>
     <strong>
@@ -375,13 +453,21 @@
     with Sara Negri, Nicola Olivetti and Gian Luca Pozzato, with the valuable help of Cyril Terrioux 
 </p>
 
+
+
 <h2>
     <p style="text-align: center;">      
       · 
       <a href="https://www.un.org/en/genocide-prevention/definition" target="_blank" class="no-link-style">Stop genocide against Palestinians</a>
       ·
     </p>
-  </h2>
+</h2>
+
+
+    <p style="text-align: center;">      
+      Last update 14 May 2026
+    </p>
+
 
 
   
